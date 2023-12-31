@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Новогодняя игра!</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Выберите звук</h1>
+    <div class="select">
+      <div>
+        <h2>Ку-ку</h2>
+        <div
+          class="but_small"
+          style="background-color: aqua"
+          onclick="playSound1()"
+        ></div>
+        <button onclick="window.location.href='./first.html'">Выбрать</button>
+      </div>
+      <div>
+        <h2>Утро</h2>
+        <div
+          class="but_small"
+          style="background-color: yellowgreen"
+          onclick="playSound2()"
+        ></div>
+        <button onclick="window.location.href='./second.html'">Выбрать</button>
+      </div>
+    </div>
+    <div class="select">
+      <div>
+        <h2>Гитара</h2>
+        <div
+          class="but_small"
+          style="background-color: goldenrod"
+          onclick="playSound3()"
+        ></div>
+        <button onclick="window.location.href='./third.html'">Выбрать</button>
+      </div>
+      <div>
+        <h2>Та-дам</h2>
+        <div
+          class="but_small"
+          style="background-color: rosybrown"
+          onclick="playSound4()"
+        ></div>
+        <button onclick="window.location.href='./fourth.html'">Выбрать</button>
+      </div>
+    </div>
+    <audio id="sound-1" src="budil.mp3"></audio>
+    <audio id="sound-2" src="budilnik.mp3"></audio>
+    <audio id="sound-3" src="gitara.mp3"></audio>
+    <audio id="sound-4" src="s-aplodismentami.mp3"></audio>
+    <script src="index.js"></script>
+  </body>
+</html>
